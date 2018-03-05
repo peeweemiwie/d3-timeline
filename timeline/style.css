@@ -23,7 +23,7 @@ body > section {
 }
 
 #chart line {
-    stroke: #2b2b2b;
+    stroke: #aaa;
 }
 
 #chart line.vertical-marker.now {

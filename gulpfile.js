@@ -31,12 +31,17 @@
         return gulp.watch('scss/*', ['css:build']);
     });
 
+    gulp.task('html:watch', function(){
+        return gulp.src('.timeline/**/*.html', ['html'])
+    });
+
     gulp.task('serve', () => {
         gulp.src('./')
             .pipe(webserver({
                 livereload: true,
                 directoryListing: true,
-                open: true
+                open: true,
+                port: 8000,
             }));
     });
 
