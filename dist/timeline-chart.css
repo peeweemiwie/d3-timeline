@@ -1,32 +1,63 @@
-.timeline-chart .axis path {
-  fill: none;
-  stroke: none; }
+* {
+  box-sizing: border-box; }
 
-.timeline-chart line {
-  stroke: black; }
+.html {
+  font-size: 62.5%; }
 
-.timeline-chart .vertical-marker {
-  stroke-width: 1; }
+.timeline-chart {
+  background-color: white; }
+  .timeline-chart .axis path {
+    fill: none;
+    stroke: none; }
+  .timeline-chart line {
+    stroke: black; }
+  .timeline-chart rect, .timeline-chart rect.chart-bounds {
+    fill: transparent; }
+  .timeline-chart rect.chart-bounds:hover, .timeline-chart rect.interval:hover {
+    cursor: -webkit-grab;
+    cursor: grab; }
+  .timeline-chart rect.chart-bounds:active, .timeline-chart rect.interval:active {
+    cursor: -webkit-grabbing;
+    cursor: grabbing; }
+  .timeline-chart .dot:hover {
+    cursor: pointer; }
+  .timeline-chart .interval-text {
+    pointer-events: none; }
+  .timeline-chart rect.interval.regimen,
+  .timeline-chart rect.interval {
+    ry: 5;
+    rx: 5;
+    stroke: transparent; }
+  .timeline-chart rect.interval.radiation {
+    fill: #37bc9b; }
+  .timeline-chart rect.interval.surgery {
+    fill: #4a89dc; }
+  .timeline-chart rect.interval.regimen {
+    fill: orange; }
+  .timeline-chart rect.interval.regimen-interval {
+    fill: #da4453; }
+  .timeline-chart line {
+    stroke: #dfe3e9; }
+  .timeline-chart text {
+    font-size: 1.6rem; }
+  .timeline-chart .dot-label {
+    fill: transparent; }
+  .timeline-chart text.interval-text,
+  .timeline-chart text.dot-label {
+    fill: white;
+    font-size: 1.6rem; }
+  .timeline-chart line.vertical-marker.now {
+    stroke: #da4453; }
 
-.timeline-chart rect, .timeline-chart rect.chart-bounds {
-  fill: transparent; }
+rect.interval.blue-interval {
+  fill: blue;
+  stroke: blue; }
 
-.timeline-chart rect.chart-bounds:hover, .timeline-chart rect.interval:hover {
-  cursor: -webkit-grab;
-  cursor: grab; }
+circle.blue-dot {
+  fill: blue; }
 
-.timeline-chart rect.chart-bounds:active, .timeline-chart rect.interval:active {
-  cursor: -webkit-grabbing;
-  cursor: grabbing; }
-
-.timeline-chart .dot:hover {
-  cursor: pointer; }
-
-.timeline-chart .interval-text {
-  pointer-events: none; }
-
-.timeline-chart rect.interval {
-  ry: 5;
-  rx: 5;
-  fill: black;
-  stroke: #2b2b2b; }
+/* Override d3tip */
+.d3-tip {
+  border: 1px solid #dfe3e9;
+  background: white;
+  color: #313d4f; }

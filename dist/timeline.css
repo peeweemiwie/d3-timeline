@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box; }
+
+.html {
+  font-size: 62.5%; }
+
+.wrapper {
+  background-color: #dfe3e9; }
+
+.top,
+.header {
+  display: -ms-grid;
+  display: grid; }
+
+.top {
+  border-bottom: 1px solid #8562ea;
+  width: 100%;
+  grid-area: header;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 10px; }
+  .top .header {
+    -ms-grid-rows: 70px 50px;
+        grid-template-rows: 70px 50px; }
+    .top .header .page-info,
+    .top .header .patient-info {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center; }
+    .top .header .patient-info {
+      background-color: #8562ea;
+      color: white;
+      position: relative; }
+      .top .header .patient-info .btn.back {
+        position: absolute;
+        left: 2rem; }
+        .top .header .patient-info .btn.back .material-icons {
+          color: white; }
+    .top .header .page-info {
+      background-color: #f4f7f9;
+      border-bottom: 2px solid #c6c8d0;
+      color: #313d4f; }
+    .top .header .title {
+      font-size: 2rem; }
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 2rem;
+  padding-top: 2rem; }
+
+.card {
+  background-color: white;
+  border: 1px solid #dfe3e9;
+  border-radius: 0.5rem 0.5rem 0 0;
+  font-size: 1.4rem;
+  width: 96vw;
+  justify-self: center; }
+  .card .header,
+  .card .details {
+    padding: 1rem; }
+  .card .header {
+    grid-area: header;
+    border-radius: 0.5rem 0.5rem 0 0; }
+    .card .header.regimen {
+      background-color: orange; }
+    .card .header.regimen.interval {
+      background-color: #da4453; }
+    .card .header.radiation {
+      background-color: #37bc9b; }
+    .card .header.surgery {
+      background-color: #4a89dc; }
+  .card .details {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    grid-row-gap: 20px; }
+    .card .details .section {
+      display: -ms-grid;
+      display: grid;
+      grid-row-gap: 10px; }
+    .card .details .key {
+      font-weight: 200;
+      color: #313d4f; }
+
+.footer {
+  grid-area: footer;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
+  -ms-grid-rows: 70px;
+      grid-template-rows: 70px;
+  border-top: 1px solid #8562ea;
+  z-index: 30; }
+  .footer .btn {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 80% 20%;
+        grid-template-rows: 80% 20%; }
+    .footer .btn .material-icons {
+      font-size: 42px;
+      color: #313d4f; }
+    .footer .btn.selected .material-icons {
+      color: #8562ea; }
+  .footer .span {
+    font-size: 1.2rem; }

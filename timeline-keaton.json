@@ -1,0 +1,491 @@
+{
+  "data": [
+    
+    {
+      "id": "e62c6f7a-afd6-401c-a229-0a6ed73ac29a",
+      "type": "Fact",
+      "attributes": {
+        "authoring": {
+          "author": {
+            "id": "keatonbedell@oncota.com"
+          },
+          "application_version": "2.0.2-SNAPSHOT"
+        },
+        "abstraction_levels": [],
+        "fact_type": "tumor",
+        "status": {
+          "type": "active",
+          "reason": "saved",
+          "timestamp": "2018-03-08T14:25:47.481Z",
+          "user": "keatonbedell@oncota.com"
+        },
+        "fields": {
+          "date_assessed": {
+            "year": 2016,
+            "month": 1,
+            "day": 1
+          },
+          "primary_site": "C501",
+          "histology": "8001/3",
+          "location": [
+            "n_a"
+          ]
+        },
+        "created_at": "2018-03-02T19:40:13.708448Z"
+      },
+      "relationships": {
+        "Document": {
+          "data": {
+            "id": "4615c68645d88b0fb4fa4865cf5d6df69cde8bc02fc72390f9cef17e46b4b555",
+            "type": "Document"
+          }
+        },
+        "Parent": {
+          "data": {
+            "id": "7f22efcd-5a26-4bfd-a478-cd414a3eb685",
+            "type": "Fact"
+          }
+        },
+        "Children": {
+          "data": [
+            {
+              "id": "d7cfe7b6-68ec-455e-b56e-43d8555133ee",
+              "type": "Fact"
+            },
+            {
+              "id": "ae7890d1-9039-4105-958a-f83b04ae90da",
+              "type": "Fact"
+            },
+            {
+              "id": "99fc27e5-24f1-453d-b9ab-c721f51e9d4f",
+              "type": "Fact"
+            },
+            {
+              "id": "33aa236e-d04b-46a8-a913-be91f89ec8b0",
+              "type": "Fact"
+            },
+            {
+              "id": "b728fd7c-96ab-4bb4-b6e7-4c0164c82215",
+              "type": "Fact"
+            },
+            {
+              "id": "ad3e9fab-2072-484c-93d7-5a8ac8da2ebe",
+              "type": "Fact"
+            },
+            {
+              "id": "a035043c-4dd0-4c67-b331-425cc0fa5ea9",
+              "type": "Fact"
+            },
+            {
+              "id": "fd8ab7a5-b2e8-4f0e-9761-1c9c879225ee",
+              "type": "Fact"
+            }
+          ]
+        }
+      }
+    },     {
+      "id": "d7cfe7b6-68ec-455e-b56e-43d8555133ee",
+      "type": "Fact",
+      "attributes": {
+        "authoring": {
+          "author": {
+            "id": "keatonbedell@oncota.com"
+          },
+          "application_version": "2.0.2-SNAPSHOT"
+        },
+        "abstraction_levels": [],
+        "fact_type": "regimen",
+        "status": {
+          "type": "active",
+          "reason": "saved",
+          "timestamp": "2018-03-08T14:25:47.482Z",
+          "user": "keatonbedell@oncota.com"
+        },
+        "fields": {
+          "doctor_stated_regimen": "cmf_cyclophosphamide_plus_methotrexate_plus_fluorouracil",
+          "actual_regimen_start_date": {
+            "year": 2016,
+            "month": 9,
+            "day": 25
+          },
+          "actual_regimen_stop_date": {
+            "year": 2017,
+            "month": 3,
+            "day": 4
+          },
+          "resulted_in": "switch",
+          "reason_for_modification": "progression"
+        },
+        "created_at": "2018-03-02T19:49:07.587990Z"
+      },
+      "relationships": {
+        "Document": {
+          "data": {
+            "id": "4615c68645d88b0fb4fa4865cf5d6df69cde8bc02fc72390f9cef17e46b4b555",
+            "type": "Document"
+          }
+        },
+        "Parent": {
+          "data": {
+            "id": "e62c6f7a-afd6-401c-a229-0a6ed73ac29a",
+            "type": "Fact"
+          }
+        }
+      }
+    },    {
+      "id": "7f22efcd-5a26-4bfd-a478-cd414a3eb685",
+      "type": "Fact",
+      "attributes": {
+        "authoring": {
+          "author": {
+            "id": "keatonbedell@oncota.com"
+          },
+          "application_version": "2.0.2-SNAPSHOT"
+        },
+        "abstraction_levels": [],
+        "fact_type": "disease",
+        "status": {
+          "type": "active",
+          "reason": "saved",
+          "timestamp": "2018-03-08T14:25:47.484Z",
+          "user": "keatonbedell@oncota.com"
+        },
+        "fields": {
+          "code": "C50911",
+          "system": "ICD10"
+        },
+        "created_at": "2018-03-02T19:39:13.467315Z"
+      },
+      "relationships": {
+        "Document": {
+          "data": {
+            "id": "4615c68645d88b0fb4fa4865cf5d6df69cde8bc02fc72390f9cef17e46b4b555",
+            "type": "Document"
+          }
+        },
+        "Children": {
+          "data": [
+            {
+              "id": "e62c6f7a-afd6-401c-a229-0a6ed73ac29a",
+              "type": "Fact"
+            }
+          ]
+        }
+      }
+    },    {
+      "id": "ae7890d1-9039-4105-958a-f83b04ae90da",
+      "type": "Fact",
+      "attributes": {
+        "authoring": {
+          "author": {
+            "id": "keatonbedell@oncota.com"
+          },
+          "application_version": "2.0.2-SNAPSHOT"
+        },
+        "abstraction_levels": [],
+        "fact_type": "regimen",
+        "status": {
+          "type": "active",
+          "reason": "saved",
+          "timestamp": "2018-03-08T14:25:47.484Z",
+          "user": "keatonbedell@oncota.com"
+        },
+        "fields": {
+          "doctor_stated_regimen": "ac_doxorubicin_plus_cyclophosphamide_to_paclitaxel",
+          "actual_regimen_start_date": {
+            "year": 2016,
+            "month": 3,
+            "day": 1
+          },
+          "actual_regimen_stop_date": {
+            "year": 2016,
+            "month": 9,
+            "day": 15
+          },
+          "resulted_in": "switch",
+          "reason_for_modification": "progression"
+        },
+        "created_at": "2018-03-02T19:46:23.100794Z"
+      },
+      "relationships": {
+        "Document": {
+          "data": {
+            "id": "4615c68645d88b0fb4fa4865cf5d6df69cde8bc02fc72390f9cef17e46b4b555",
+            "type": "Document"
+          }
+        },
+        "Parent": {
+          "data": {
+            "id": "e62c6f7a-afd6-401c-a229-0a6ed73ac29a",
+            "type": "Fact"
+          }
+        }
+      }
+    },    {
+      "id": "99fc27e5-24f1-453d-b9ab-c721f51e9d4f",
+      "type": "Fact",
+      "attributes": {
+        "authoring": {
+          "author": {
+            "id": "keatonbedell@oncota.com"
+          },
+          "application_version": "2.0.2-SNAPSHOT"
+        },
+        "abstraction_levels": [],
+        "fact_type": "surgery",
+        "status": {
+          "type": "active",
+          "reason": "saved",
+          "timestamp": "2018-03-08T14:25:47.486Z",
+          "user": "keatonbedell@oncota.com"
+        },
+        "fields": {
+          "actual_start_date": {
+            "year": 2016,
+            "month": 1,
+            "day": 23
+          },
+          "site": "primary",
+          "anatomic_site": "C509",
+          "procedure": "mastectomy,_nos"
+        },
+        "created_at": "2018-03-02T19:41:35.072633Z"
+      },
+      "relationships": {
+        "Document": {
+          "data": {
+            "id": "4615c68645d88b0fb4fa4865cf5d6df69cde8bc02fc72390f9cef17e46b4b555",
+            "type": "Document"
+          }
+        },
+        "Parent": {
+          "data": {
+            "id": "e62c6f7a-afd6-401c-a229-0a6ed73ac29a",
+            "type": "Fact"
+          }
+        }
+      }
+    },    {
+      "id": "33aa236e-d04b-46a8-a913-be91f89ec8b0",
+      "type": "Fact",
+      "attributes": {
+        "authoring": {
+          "author": {
+            "id": "keatonbedell@oncota.com"
+          },
+          "application_version": "2.0.2-SNAPSHOT"
+        },
+        "abstraction_levels": [],
+        "fact_type": "radiation_therapy",
+        "status": {
+          "type": "active",
+          "reason": "saved",
+          "timestamp": "2018-03-08T14:25:47.486Z",
+          "user": "keatonbedell@oncota.com"
+        },
+        "fields": {
+          "actual_start_date": {
+            "year": 2016,
+            "month": 2,
+            "day": 15
+          },
+          "actual_end_date": {
+            "year": 2016,
+            "month": 2,
+            "day": 20
+          },
+          "location": "onsite",
+          "technique": "imrt"
+        },
+        "created_at": "2018-03-02T19:43:20.699873Z"
+      },
+      "relationships": {
+        "Document": {
+          "data": {
+            "id": "4615c68645d88b0fb4fa4865cf5d6df69cde8bc02fc72390f9cef17e46b4b555",
+            "type": "Document"
+          }
+        },
+        "Parent": {
+          "data": {
+            "id": "e62c6f7a-afd6-401c-a229-0a6ed73ac29a",
+            "type": "Fact"
+          }
+        }
+      }
+    },    {
+      "id": "b728fd7c-96ab-4bb4-b6e7-4c0164c82215",
+      "type": "Fact",
+      "attributes": {
+        "authoring": {
+          "author": {
+            "id": "keatonbedell@oncota.com"
+          },
+          "application_version": "2.0.2-SNAPSHOT"
+        },
+        "abstraction_levels": [],
+        "fact_type": "outcome",
+        "status": {
+          "type": "active",
+          "reason": "saved",
+          "timestamp": "2018-03-08T14:25:47.488Z",
+          "user": "keatonbedell@oncota.com"
+        },
+        "fields": {
+          "date_assessed": {
+            "year": 2017,
+            "month": 3,
+            "day": 4
+          },
+          "outcome_type": "progression_relapse",
+          "outcome": "pathologic"
+        },
+        "created_at": "2018-03-02T19:51:13.524003Z"
+      },
+      "relationships": {
+        "Document": {
+          "data": {
+            "id": "4615c68645d88b0fb4fa4865cf5d6df69cde8bc02fc72390f9cef17e46b4b555",
+            "type": "Document"
+          }
+        },
+        "Parent": {
+          "data": {
+            "id": "e62c6f7a-afd6-401c-a229-0a6ed73ac29a",
+            "type": "Fact"
+          }
+        }
+      }
+    },    {
+      "id": "ad3e9fab-2072-484c-93d7-5a8ac8da2ebe",
+      "type": "Fact",
+      "attributes": {
+        "authoring": {
+          "author": {
+            "id": "keatonbedell@oncota.com"
+          },
+          "application_version": "2.0.2-SNAPSHOT"
+        },
+        "abstraction_levels": [],
+        "fact_type": "regimen",
+        "status": {
+          "type": "active",
+          "reason": "saved",
+          "timestamp": "2018-03-08T14:25:47.489Z",
+          "user": "keatonbedell@oncota.com"
+        },
+        "fields": {
+          "doctor_stated_regimen": "investigational",
+          "clinical_trial": true,
+          "actual_regimen_start_date": {
+            "year": 2017,
+            "month": 4,
+            "day": 2
+          },
+          "currently_receiving": true,
+          "date_of_last_admin": "2018-02-03"
+        },
+        "created_at": "2018-03-02T19:50:28.554113Z"
+      },
+      "relationships": {
+        "Document": {
+          "data": {
+            "id": "4615c68645d88b0fb4fa4865cf5d6df69cde8bc02fc72390f9cef17e46b4b555",
+            "type": "Document"
+          }
+        },
+        "Parent": {
+          "data": {
+            "id": "e62c6f7a-afd6-401c-a229-0a6ed73ac29a",
+            "type": "Fact"
+          }
+        }
+      }
+    },    {
+      "id": "a035043c-4dd0-4c67-b331-425cc0fa5ea9",
+      "type": "Fact",
+      "attributes": {
+        "authoring": {
+          "author": {
+            "id": "keatonbedell@oncota.com"
+          },
+          "application_version": "2.0.2-SNAPSHOT"
+        },
+        "abstraction_levels": [],
+        "fact_type": "outcome",
+        "status": {
+          "type": "active",
+          "reason": "saved",
+          "timestamp": "2018-03-08T14:25:47.489Z",
+          "user": "keatonbedell@oncota.com"
+        },
+        "fields": {
+          "date_assessed": {
+            "year": 2016,
+            "month": 9,
+            "day": 15
+          },
+          "outcome_type": "progression_relapse",
+          "outcome": "clinical"
+        },
+        "created_at": "2018-03-02T19:47:02.282038Z"
+      },
+      "relationships": {
+        "Document": {
+          "data": {
+            "id": "4615c68645d88b0fb4fa4865cf5d6df69cde8bc02fc72390f9cef17e46b4b555",
+            "type": "Document"
+          }
+        },
+        "Parent": {
+          "data": {
+            "id": "e62c6f7a-afd6-401c-a229-0a6ed73ac29a",
+            "type": "Fact"
+          }
+        }
+      }
+    },{
+      "id": "fd8ab7a5-b2e8-4f0e-9761-1c9c879225ee",
+      "type": "Fact",
+      "attributes": {
+        "authoring": {
+          "author": {
+            "id": "keatonbedell@oncota.com"
+          },
+          "application_version": "2.0.2-SNAPSHOT"
+        },
+        "abstraction_levels": [],
+        "fact_type": "initial_diagnosis",
+        "status": {
+          "type": "active",
+          "reason": "saved",
+          "timestamp": "2018-03-08T14:25:47.491Z",
+          "user": "keatonbedell@oncota.com"
+        },
+        "fields": {
+          "value": "other",
+          "date_documented": {
+            "year": 2016,
+            "month": 1,
+            "day": 1
+          }
+        },
+        "created_at": "2018-03-02T19:51:46.855212Z"
+      },
+      "relationships": {
+        "Document": {
+          "data": {
+            "id": "4615c68645d88b0fb4fa4865cf5d6df69cde8bc02fc72390f9cef17e46b4b555",
+            "type": "Document"
+          }
+        },
+        "Parent": {
+          "data": {
+            "id": "e62c6f7a-afd6-401c-a229-0a6ed73ac29a",
+            "type": "Fact"
+          }
+        }
+      }
+    }   
+  ]
+}

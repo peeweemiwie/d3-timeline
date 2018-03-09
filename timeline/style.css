@@ -1,18 +1,18 @@
 *, *:after, *:before {
     box-sizing: border-box;
 }
-
-
 html, body {
     height: 100%;
     width: 100%;
     font-family: Helvetica, Arial;
-}
-body > section {
-    height: 100%;
-    width: 100%;
+    font-size: 62.5%;
 }
 
+/* body > section {
+    height: 100%;
+    width: 100%;
+} */
+/* 
 #chart {
     width: 90%;
     height: 150px;
@@ -41,10 +41,10 @@ circle.blue-dot {
 
 /* Override d3tip */
 
-.d3-tip {
+/* .d3-tip {
     background: white;
     color: black;
-}
+} */
 
 /* Tiny Flex Grid */
 

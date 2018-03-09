@@ -1,4 +1,9 @@
+@import "variebles.scss";
+
+
+
 .timeline-chart {
+  background-color: $white;
     .axis path {
         fill: none;
         stroke: none;
@@ -22,11 +27,60 @@
     }
     .interval-text {
         pointer-events: none;
+        
     }
+    rect.interval.regimen,
     rect.interval {
         ry: 5;
         rx: 5;
-        fill: black;
-        stroke: #2b2b2b;
+        stroke: transparent;
     }
-}
+    rect.interval.radiation {
+      fill: $lime;
+    }
+    rect.interval.surgery {
+      fill: $accent-blue;
+    }
+    rect.interval.regimen {
+      fill: $orange;
+    }
+    rect.interval.regimen-interval {
+      fill: $red;
+    }
+ 
+    line {
+      stroke: $light-gray;
+    }
+    text {
+      font-size: 1.6rem;
+    }
+
+    .dot-label {
+      fill: transparent;
+    }
+    text.interval-text,
+    text.dot-label {
+      fill: $white;
+      font-size: 1.6rem;
+    }
+    line.vertical-marker.now {
+      stroke: $red;
+    }
+  }
+
+  rect.interval.blue-interval {
+    fill: blue;
+    stroke: blue;
+  }
+  
+  circle.blue-dot {
+    fill: blue;
+  }
+  
+  /* Override d3tip */
+  
+  .d3-tip {
+    border: 1px solid $light-gray;
+    background: $white;
+    color: $cota-blue;
+  }

@@ -1,0 +1,126 @@
+@import "variebles.scss";
+
+.wrapper {
+  background-color: $light-gray;
+}
+.top,
+.header {
+  display: grid;
+}
+.top {
+  border-bottom: 1px solid $cota-purple;
+  width: 100%;
+  grid-area: header;
+  position: sticky;
+  top: 0;
+  display: grid;
+  grid-row-gap: 10px;
+  .header {
+    
+    grid-template-rows: 70px 50px;
+    .page-info,
+    .patient-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .patient-info {
+      background-color: $cota-purple;
+      color: $white;
+      position: relative;
+      .btn.back {
+        position: absolute;
+        left: 2rem;
+        .material-icons {
+          color: $white;
+        }
+      }
+    }
+    .page-info {
+      background-color: $lightest-gray;
+      border-bottom: 2px solid $warm-gray;
+      color: $cota-blue;
+    }
+    .title {
+      font-size: 2rem;
+    }  
+  }
+}
+
+.container {
+  display: grid;
+  grid-row-gap: 2rem;
+  padding-top: 2rem;
+}
+$radius-m: .5rem;
+.card {
+  background-color: $white;
+  border: 1px solid $light-gray;
+  border-radius: $radius-m $radius-m 0 0;
+  font-size: 1.4rem;
+  width: 96vw;
+  justify-self: center;
+
+  .header,
+  .details {
+    padding: 1rem;
+  }
+  .header {
+    grid-area: header;
+    border-radius: $radius-m $radius-m 0 0;
+    &.regimen {
+      background-color: $orange;
+    }
+    &.regimen.interval {
+      background-color: $red;
+    }
+    &.radiation {
+      background-color: $lime;
+    }
+    &.surgery {
+      background-color: $accent-blue;
+    }
+  }
+  .details {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 20px;
+    //grid-template-rows: 100px 100px;
+    .section {
+      display: grid;
+      grid-row-gap: 10px;
+    }
+    .key {
+      font-weight: 200;
+      color: $cota-blue;
+    }
+  }
+}
+
+.footer {
+  grid-area: footer;
+  background-color: rgba($white, .8);
+  position: sticky;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 70px; 
+  border-top: 1px solid $cota-purple;
+  z-index: 30;
+  .btn {
+    display: grid;
+    grid-template-rows: 80% 20%;
+    .material-icons {
+      font-size: 42px;
+      color: $cota-blue;
+    }
+    &.selected .material-icons {
+      color: $cota-purple;
+    }
+  }
+  .span {
+    font-size: 1.2rem;
+  }
+}
+
+
