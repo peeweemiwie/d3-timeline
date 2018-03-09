@@ -119,3 +119,11 @@
       color: #8562ea; }
   .footer .span {
     font-size: 1.2rem; }
+
+@media screen and (max-width: 400px) {
+  .card .details {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%; }
+  .container {
+    -ms-grid-rows: 28rem 28rem 28rem 28rem;
+        grid-template-rows: 28rem 28rem 28rem 28rem; } }

@@ -125,4 +125,12 @@ $radius-m: .5rem;
   }
 }
 
+@media screen and (max-width: 400px){
+  .card .details {
+    grid-template-columns: 100%;
+  }
+  .container {
+    grid-template-rows: 28rem 28rem 28rem 28rem;
+  }
+}
 
