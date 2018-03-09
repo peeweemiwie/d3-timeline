@@ -4,6 +4,7 @@
 .html {
   font-size: 62.5%; }
 
+.top,
 .wrapper {
   background-color: #dfe3e9; }
 
@@ -13,7 +14,6 @@
   display: grid; }
 
 .top {
-  border-bottom: 1px solid #8562ea;
   width: 100%;
   grid-area: header;
   position: -webkit-sticky;
@@ -41,7 +41,8 @@
         position: absolute;
         left: 2rem; }
         .top .header .patient-info .btn.back .material-icons {
-          color: white; }
+          color: white;
+          font-size: 4rem; }
     .top .header .page-info {
       background-color: #f4f7f9;
       border-bottom: 2px solid #c6c8d0;
@@ -53,7 +54,9 @@
   display: -ms-grid;
   display: grid;
   grid-row-gap: 2rem;
-  padding-top: 2rem; }
+  padding: 2rem 0 3rem 0;
+  -ms-grid-rows: 25rem 25rem 25rem 25rem;
+      grid-template-rows: 25rem 25rem 25rem 25rem; }
 
 .card {
   background-color: white;
@@ -102,7 +105,7 @@
       grid-template-columns: 25% 25% 25% 25%;
   -ms-grid-rows: 70px;
       grid-template-rows: 70px;
-  border-top: 1px solid #8562ea;
+  border-top: 2px solid #8562ea;
   z-index: 30; }
   .footer .btn {
     display: -ms-grid;

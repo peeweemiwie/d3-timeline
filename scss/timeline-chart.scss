@@ -4,6 +4,8 @@
 
 .timeline-chart {
   background-color: $white;
+  border-bottom: 2px solid $warm-gray;
+  border-top: 2px solid $warm-gray;
     .axis path {
         fill: none;
         stroke: none;

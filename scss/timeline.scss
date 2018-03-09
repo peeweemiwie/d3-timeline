@@ -1,5 +1,5 @@
 @import "variebles.scss";
-
+.top,
 .wrapper {
   background-color: $light-gray;
 }
@@ -8,7 +8,7 @@
   display: grid;
 }
 .top {
-  border-bottom: 1px solid $cota-purple;
+  // border-bottom: 1px solid $cota-purple;
   width: 100%;
   grid-area: header;
   position: sticky;
@@ -51,7 +51,8 @@
 .container {
   display: grid;
   grid-row-gap: 2rem;
-  padding-top: 2rem;
+  padding: 2rem 0 3rem 0;
+  grid-template-rows: 25rem 25rem 25rem 25rem;
 }
 $radius-m: .5rem;
 .card {
@@ -106,7 +107,7 @@ $radius-m: .5rem;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 70px; 
-  border-top: 1px solid $cota-purple;
+  border-top: 2px solid $cota-purple;
   z-index: 30;
   .btn {
     display: grid;
