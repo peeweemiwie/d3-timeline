@@ -11,7 +11,7 @@ data.forEach((el) => {
   console.log('el', el.data[0].from);
   let cardHeader = '<div class="header ' + el.label.toLowerCase() + '">' + el.label + '</div>';
   let sectionOne = '<div class="section"><p class="key">Treatment Start Date: </p><p class="value">' + el.startDate + '</p></div>';
-  let sectionTwo = '<div class="section"><p class="key">Treatment Start Date: </p><p class="value">' + el.startDate + '</p></div>';
+  let sectionTwo = '<div class="section"><p class="key">Treatment End Date: </p><p class="value">' + el.endDate + '</p></div>';
   let sectionThree = '<div class="section"><p class="key">Treatment Start Date: </p><p class="value">' + el.startDate + '</p></div>';
   let sectionFour = '<div class="section"><p class="key">Treatment Start Date: </p><p class="value">' + el.startDate + '</p></div>';
   let cardDetails = '<div class="details">' + sectionOne + sectionTwo + sectionThree + sectionFour + '</div>';

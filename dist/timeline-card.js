@@ -33,7 +33,7 @@
       console.log('el', el.data[0].from);
       var cardHeader = '<div class="header ' + el.label.toLowerCase() + '">' + el.label + '</div>';
       var sectionOne = '<div class="section"><p class="key">Treatment Start Date: </p><p class="value">' + el.startDate + '</p></div>';
-      var sectionTwo = '<div class="section"><p class="key">Treatment Start Date: </p><p class="value">' + el.startDate + '</p></div>';
+      var sectionTwo = '<div class="section"><p class="key">Treatment End Date: </p><p class="value">' + el.endDate + '</p></div>';
       var sectionThree = '<div class="section"><p class="key">Treatment Start Date: </p><p class="value">' + el.startDate + '</p></div>';
       var sectionFour = '<div class="section"><p class="key">Treatment Start Date: </p><p class="value">' + el.startDate + '</p></div>';
       var cardDetails = '<div class="details">' + sectionOne + sectionTwo + sectionThree + sectionFour + '</div>';

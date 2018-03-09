@@ -15,7 +15,8 @@
 
   var data = [{
     label: 'Surgery',
-    startDate: '2016, 1, 23',
+    startDate: '1/23/2016',
+    endDate: '5/1/2016',
     data: [{
       customClass: 'dot surgery',
       type: TimelineChart.TYPE.POINT,
@@ -29,7 +30,8 @@
     }]
   }, {
     label: 'Radiation Therapy',
-    startDate: '2016, 2, 15',
+    startDate: '2/15/2016',
+    endDate: '2/20/2016',
     data: [{
       label: "Intensity-modulated Radiation Therapy (IMRT)",
       type: TimelineChart.TYPE.INTERVAL,
@@ -39,7 +41,8 @@
     }]
   }, {
     label: 'Regimen',
-    startDate: '2016, 3, 1',
+    startDate: '9/25/2016',
+    endDate: '3/4/2017',
     data: [{
       label: "CMF",
       type: TimelineChart.TYPE.INTERVAL,
@@ -55,7 +58,8 @@
     }]
   }, {
     label: 'Regimen Interval',
-    startDate: '2016, 4, 2',
+    startDate: '4/2/2016',
+    endDate: '2/3/2016',
     data: [{
       label: "Investigational",
       type: TimelineChart.TYPE.INTERVAL,
